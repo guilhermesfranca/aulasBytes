@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empathy Maps - Outsourcing de T-shirts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .empathy-map {
+            width: 100%;
+            max-width: 1200px;
+            height: 800px;
+            background: white;
+            border: 2px solid black;
+            position: relative;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .center-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e91e63;
+            margin-bottom: 5px;
+        }
+        
+        .age {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .quadrant {
+            width: 50%;
+            height: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            border: 1px solid black;
+        }
+        
+        .top-left {
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            padding-top: 40px;
+        }
+        
+        .top-right {
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            padding-top: 40px;
+        }
+        
+        .bottom-left {
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+            padding-bottom: 40px;
+        }
+        
+        .bottom-right {
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            padding-bottom: 40px;
+        }
+        
+        .quadrant-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            position: absolute;
+        }
+        
+        .top-left .quadrant-title {
+            top: 10px;
+            left: 20px;
+        }
+        
+        .top-right .quadrant-title {
+            top: 10px;
+            right: 20px;
+        }
+        
+        .bottom-left .quadrant-title {
+            bottom: 10px;
+            left: 20px;
+        }
+        
+        .bottom-right .quadrant-title {
+            bottom: 10px;
+            right: 20px;
+        }
+        
+        .content {
+            font-size: 13px;
+            line-height: 1.4;
+            margin-top: 30px;
+        }
+        
+        .bottom-left .content,
+        .bottom-right .content {
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        
+        .top-center {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        .top-center-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .center-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        .center-bottom-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Empathy Maps - Plataforma de Outsourcing de T-shirts</h1>
+    
+    <!-- Empathy Map 1 - Designer Freelancer -->
+    <div class="empathy-map">
+        <div class="top-center">
+            <div class="top-center-title">O que pensa e sente?</div>
+            Para a Marina é importante ter uma plataforma que permita criar designs únicos e vendê-los sem se preocupar com produção e logística. Ter uma ferramenta que transforme sua criatividade em renda passiva é essencial para sua independência financeira. A felicidade da Marina é ver seus designs sendo usados por pessoas ao redor do mundo.
+        </div>
+        
+        <div class="quadrant top-left">
+            <div class="quadrant-title">O que escuta?</div>
+            <div class="content">
+                Outros designers falam sobre a dificuldade de monetizar criações sem capital inicial para estoque.<br><br>
+                Influenciadores digitais comentam sobre a importância de ter produtos próprios para diversificar receita.<br><br>
+                Clientes pedem designs personalizados mas ela não tem como produzir fisicamente.
+            </div>
+        </div>
+        
+        <div class="quadrant top-right">
+            <div class="quadrant-title">O que vê?</div>
+            <div class="content">
+                Já existem plataformas internacionais de print-on-demand, mas poucas focam no mercado brasileiro.<br><br>
+                Vê uma oportunidade crescente no e-commerce de produtos personalizados.<br><br>
+                Nota que muitas pessoas querem t-shirts exclusivas e diferentes do que encontram em lojas físicas.
+            </div>
+        </div>
+        
+        <div class="center-circle">
+            <div class="name">Marina</div>
+            <div class="age">28 anos</div>
+        </div>
+        
+        <div class="center-bottom">
+            <div class="center-bottom-title">O que fala e faz?</div>
+            É uma pessoa criativa e sempre atenta às tendências de design. A Marina é uma empreendedora digital que quer focar apenas na criação, deixando a produção e logística por conta de terceiros. Ela compartilha seus trabalhos nas redes sociais e busca constantemente novas oportunidades de renda.
+        </div>
+        
+        <div class="quadrant bottom-left">
+            <div class="quadrant-title">Dores</div>
+            <div class="content">
+                Não tem capital para investir em estoque físico de produtos.<br><br>
+                Perde muito tempo gerenciando produção e envios ao invés de criar.<br><br>
+                Dificuldade em precificar produtos considerando todos os custos envolvidos.
+            </div>
+        </div>
+        
+        <div class="quadrant bottom-right">
+            <div class="quadrant-title">Ganhos</div>
+            <div class="content">
+                Pode focar 100% no que ama: criar designs incríveis.<br><br>
+                Gera renda passiva com seus designs sendo vendidos automaticamente.<br><br>
+                Alcança clientes em todo o país sem se preocupar com logística.<br><br>
+                Testa rapidamente a aceitação de novos designs no mercado.
+            </div>
+        </div>
+    </div>
+    
+    <!-- Empathy Map 2 - Lojista Pequeno Porte -->
+    <div class="empathy-map">
+        <div class="top-center">
+            <div class="top-center-title">O que pensa e sente?</div>
+            Ele possui uma pequena loja física há anos e sente que precisa se adaptar ao digital para sobreviver. Conhece bem seu público local, mas tem dificuldade com tecnologia e gestão online. Quer expandir sem grandes riscos financeiros, oferecendo produtos personalizados que complementem seu negócio atual.
+        </div>
+        
+        <div class="quadrant top-left">
+            <div class="quadrant-title">O que escuta?</div>
+            <div class="content">
+                Clientes perguntam se ele pode personalizar camisetas com logos de times, frases ou imagens específicas.<br><br>
+                Outros comerciantes falam sobre a importância de ter presença digital.<br><br>
+                Fornecedores sugerem que ele diversifique o mix de produtos.
+            </div>
+        </div>
+        
+        <div class="quadrant top-right">
+            <div class="quadrant-title">O que vê?</div>
+            <div class="content">
+                Observa que as vendas online crescem enquanto o movimento na loja física diminui.<br><br>
+                Vê concorrentes oferecendo serviços de personalização.<br><br>
+                Nota que clientes mais jovens preferem produtos únicos e personalizados.
+            </div>
+        </div>
+        
+        <div class="center-circle">
+            <div class="name">Carlos</div>
+            <div class="age">45 anos</div>
+        </div>
+        
+        <div class="center-bottom">
+            <div class="center-bottom-title">O que fala e faz?</div>
+            Apesar de ser reservado com tecnologia, é uma pessoa determinada a adaptar seu negócio. O Carlos prioriza o atendimento pessoal e a qualidade dos produtos. Ele já identificou a necessidade de digitalização e está buscando ativamente soluções simples e eficazes.
+        </div>
+        
+        <div class="quadrant bottom-left">
+            <div class="quadrant-title">Dores</div>
+            <div class="content">
+                Não tem conhecimento técnico para gerir uma loja online complexa.<br><br>
+                Receio de investir em estoque de produtos que podem não vender.<br><br>
+                Dificuldade em competir com grandes varejistas online.<br><br>
+                Falta de tempo para gerenciar múltiplos canais de venda.
+            </div>
+        </div>
+        
+        <div class="quadrant bottom-right">
+            <div class="quadrant-title">Ganhos</div>
+            <div class="content">
+                Pode oferecer personalização sem investimento em equipamentos.<br><br>
+                Expande seu negócio para o digital de forma gradual e segura.<br><br>
+                Mantém foco no atendimento ao cliente, sua principal vantagem competitiva.<br><br>
+                Diversifica receita com produtos de maior margem.
+            </div>
+        </div>
+    </div>
+    
+    <!-- Empathy Map 3 - Influencer Digital -->
+    <div class="empathy-map">
+        <div class="top-center">
+            <div class="top-center-title">O que pensa e sente?</div>
+            É uma pessoa muito conectada e sempre em busca de novas formas de monetizar sua audiência. Ela sente que seus seguidores confiam em suas recomendações e quer oferecer produtos que façam sentido com seu conteúdo. Valoriza muito sua reputação online e só trabalha com soluções de qualidade. Ainda não encontrou uma forma simples de criar produtos físicos próprios.
+        </div>
+        
+        <div class="quadrant top-left">
+            <div class="quadrant-title">O que escuta?</div>
+            <div class="content">
+                Seus seguidores sempre perguntam onde podem comprar produtos com suas frases ou designs favoritos.<br><br>
+                Outros influencers compartilham suas experiências com produtos próprios e as dificuldades encontradas.<br><br>
+                Marcas oferecem parcerias, mas ela quer algo mais autêntico e próprio.
+            </div>
+        </div>
+        
+        <div class="quadrant top-right">
+            <div class="quadrant-title">O que vê?</div>
+            <div class="content">
+                Observa que influencers com produtos próprios têm maior independência financeira.<br><br>
+                Vê o crescimento do mercado de produtos personalizados e exclusivos.<br><br>
+                Nota que sua audiência valoriza autenticidade e produtos que representem sua marca pessoal.
+            </div>
+        </div>
+        
+        <div class="center-circle">
+            <div class="name">Júlia</div>
+            <div class="age">26 anos</div>
+        </div>
+        
+        <div class="center-bottom">
+            <div class="center-bottom-title">O que fala e faz?</div>
+            Embora seja muito ativa nas redes sociais, é cautelosa com novos negócios. A Júlia testa tudo antes de recomendar para sua audiência. Ela busca soluções que não comprometam sua rotina de criação de conteúdo, mas que agreguem valor real para seus seguidores.
+        </div>
+        
+        <div class="quadrant bottom-left">
+            <div class="quadrant-title">Dores</div>
+            <div class="content">
+                Não quer se envolver com logística e gestão de estoque, pois isso tiraria tempo da criação de conteúdo.<br><br>
+                Preocupa-se com a qualidade dos produtos, pois sua reputação está em jogo.<br><br>
+                Receio de decepcionar seguidores com produtos de baixa qualidade ou entrega demorada.
+            </div>
+        </div>
+        
+        <div class="quadrant bottom-right">
+            <div class="quadrant-title">Ganhos</div>
+            <div class="content">
+                Pode criar uma nova fonte de receita recorrente com sua audiência engajada.<br><br>
+                Oferece produtos autênticos que fortalecem sua marca pessoal.<br><br>
+                Mantém foco na criação de conteúdo, que é sua principal competência.<br><br>
+                Gera renda passiva enquanto dorme, através de vendas automatizadas.
+            </div>
+        </div>
+    </div>
+    
+    <!-- Empathy Map 4 - Empreendedor Corporate -->
+    <div class="empathy-map">
+        <div class="top-center">
+            <div class="top-center-title">O que pensa e sente?</div>
+            O Rodrigo valoriza processos bem estruturados e escalabilidade. Para ele, uma solução de outsourcing precisa ter qualidade consistente, preços competitivos e relatórios detalhados. Como gestor, ele pensa sempre no ROI e na eficiência operacional. Sente que produtos corporativos personalizados podem fortalecer o branding da empresa e gerar uma nova linha de receita.
+        </div>
+        
+        <div class="quadrant top-left">
+            <div class="quadrant-title">O que escuta?</div>
+            <div class="content">
+                A diretoria cobra resultados e novas fontes de receita.<br><br>
+                O setor de marketing sugere ações de branding mais impactantes.<br><br>
+                Colaboradores pedem brindes e uniformes personalizados com mais frequência.<br><br>
+                Clientes corporativos manifestam interesse em produtos customizados.
+            </div>
+        </div>
+        
+        <div class="quadrant top-right">
+            <div class="quadrant-title">O que vê?</div>
+            <div class="content">
+                Vê o crescimento do mercado B2B de produtos personalizados.<br><br>
+                Observa que empresas concorrentes investem em branding através de produtos próprios.<br><br>
+                Nota a importância crescente do marketing de relacionamento e fidelização.
+            </div>
+        </div>
+        
+        <div class="center-circle">
+            <div class="name">Rodrigo</div>
+            <div class="age">42 anos</div>
+        </div>
+        
+        <div class="center-bottom">
+            <div class="center-bottom-title">O que fala e faz?</div>
+            É uma pessoa analítica e orientada por dados. O Rodrigo gosta de soluções tecnológicas e processos automatizados. Tem preferência por fornecedores que ofereçam relatórios completos, preços transparentes e prazos confiáveis. Ele está sempre buscando otimizar operações e reduzir custos.
+        </div>
+        
+        <div class="quadrant bottom-left">
+            <div class="quadrant-title">Dores</div>
+            <div class="content">
+                Dificuldade em encontrar fornecedores que atendam grandes volumes com qualidade consistente.<br><br>
+                Falta de transparência em precificação e prazos de fornecedores tradicionais.<br><br>
+                Necessidade de múltiplas aprovações internas para novos projetos e investimentos.
+            </div>
+        </div>
+        
+        <div class="quadrant bottom-right">
+            <div class="quadrant-title">Ganhos</div>
+            <div class="content">
+                Pode criar uma operação escalável de produtos corporativos sem investimento em estrutura própria.<br><br>
+                Obtém relatórios detalhados para apresentar resultados à diretoria.<br><br>
+                Reduz custos operacionais ao terceirizar produção e logística.<br><br>
+                Fortalece a marca da empresa através de produtos de qualidade.
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
