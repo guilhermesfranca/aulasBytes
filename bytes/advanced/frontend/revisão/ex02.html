@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício</title>
+</head>
+<body>
+    <section class="contador" style="text-align: center; align-items: center;">
+        <h1 style="font-weight: 800;">Gerador de Números</h1>
+        <p id="valor" style="font-weight: 600;">Clique em gerar</p>
+        <button onClick="gerar()">Gerar</button>
+        
+    </section>
+<script>
+     function gerar() {
+      let contador = document.getElementById("valor");
+      let numero = Math.round(Math.random() * 200)
+      contador.innerText = numero;
+    }
+
+</script>
+</body>
+</html>

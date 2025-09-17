@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício</title>
+</head>
+<body>
+    <section class="contador" style="text-align: center; align-items: center;">
+        <h1 style="font-weight: 800;">Gerador de Nomes</h1>
+        <p id="valor" style="font-weight: 600;">Clique em gerar</p>
+        <button onClick="gerar()">Gerar</button>
+    </section>
+<script>                                   
+    let nome = ["Guilherme","Laura","Vitoria","Felipe"]
+    let adj = ["Inteligente","Desenrolade","Astuto(a)"]
+
+     function gerar() {
+      let contador = document.getElementById("valor");
+      let indiceNom = Math.floor(Math.random() * nome.length)
+      let indiceAdj = Math.floor(Math.random() * adj.length)
+      contador.innerText = nome[indiceNom] + " " + adj[indiceAdj];
+    }                       
+
+</script>
+</body>
+</html>
