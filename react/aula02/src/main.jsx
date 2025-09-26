@@ -6,8 +6,7 @@ import Random from './components/Random.jsx'
 import RandomName from './components/RandomName.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    
+  <StrictMode> 
     <RandomName/>
   </StrictMode>,
 )

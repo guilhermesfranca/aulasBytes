@@ -9,6 +9,8 @@ export default function RandomName() {
     "descolado",
     "desenrolado",
     "Gente Boa",
+    "Mimado",
+    "Amostrado"
   ];
   function gerarNumero() {
     setRandom(
