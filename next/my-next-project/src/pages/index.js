@@ -1,5 +1,6 @@
 import ComponenteComCondicional from "@/components/ComponenteComCondicional";
 import ComponenteComEventos from "@/components/ComponenteComEventos";
+import ComponenteComFormik from "@/components/ComponenteComFormik";
 import ComponenteComMap from "@/components/ComponenteComMap";
 import ComponenteComState from "@/components/ComponenteComState";
 import ComponenteComUmaProp from "@/components/ComponenteComUmaProp";
@@ -28,6 +29,7 @@ export default function Home() {
       <ComponenteComEventos/>
       <ComponenteComState/>
       <ComponenteComUseEffect/>
+      <ComponenteComFormik/>
       
     </div>
   );
